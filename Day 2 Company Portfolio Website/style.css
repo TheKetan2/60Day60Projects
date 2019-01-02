@@ -1,0 +1,511 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 20px;
+    font-family: "EB Garamond", serif;
+    background: #ccc;
+}
+
+.wrapper{
+    width: 100%;
+}
+li{
+    list-style: none;
+    
+}
+a{
+    text-decoration: none;
+}
+
+section:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+/*Common Style*/
+
+header{
+    background:#111; 
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+header div.logo{
+    width: 50%;
+    float: left;
+}
+header nav{
+    width: 50%;
+    float: right;
+}
+
+header div.logo h1{
+    text-align: center;
+    font-size: 170%;
+    margin: 1%;
+}
+header div.logo h1 #span1{
+    color: #ff7f50;
+    font-family: italic;
+}
+header div.logo h1 #span2{
+   color: #ccc; 
+}
+
+header nav ul li a{
+    color: #aaa;
+    
+}
+
+header nav ul{
+    width: 100%;
+    margin: 2% auto;
+    text-align: center;
+}
+
+header nav ul li{
+    margin-left: 5%;
+    display: inline;
+}
+header nav ul li a:hover{
+    color: #fff;
+}
+
+header nav ul li a.active{
+    border-bottom: 1px solid #aaa;
+}
+
+/*End Header*/
+
+
+section.first-section{
+    position: relative;
+    min-height: 600px;
+    background: url(images/bg.jpg) no-repeat 30% 10%;
+    background-size: cover;
+}
+
+section.first-section h2{
+    width: 40%;
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    text-align: center;
+    color: #ff7f50;
+    font-size: 300%;
+}
+
+
+/*End first section*/
+
+section.second-section{
+    background: #000;
+    
+}
+section.second-section form{
+    text-align: center;
+}
+section.second-section form input{
+    padding: 5px 10px;
+    margin: 2% 0;
+    font-size: 90%;
+}
+section.second-section form input[type="email"]{
+    background: #ccc;
+}
+section.second-section form input[type="email"]:focus{
+    background: #eee;
+}
+section.second-section form input[type="submit"]{
+    background: #ff7f50;
+    color: #333;
+}
+
+section.second-section form input[type="submit"]:hover{
+    background: #dd4d20;
+}
+
+
+/*End second section*/
+
+section.third-section img{
+    width: 50%;
+    float: left;
+    padding: 5% 0;
+    background: #ccc;
+}
+
+footer{
+    background: #000;
+    
+}
+footer p{
+    text-align: center;
+    padding: 2% 0;
+    font-style: italic;
+    font-size: 140%;
+    color: #ccc;
+}
+
+
+
+/*Start about us*/
+
+section.aboutus{
+    padding: 3% 0;
+    
+}
+section.aboutus h2{
+    text-align: center;
+    margin-bottom: 3%;
+    color: #555;
+}
+
+section.aboutus div{
+    width: 33.33333%;
+    float: left;
+}
+
+
+section.aboutus div img{
+    width: 50%;
+    margin: auto;
+    display: block;
+    border-radius: 50%;
+}
+
+section.aboutus div p{
+    width: 60%;
+    margin: auto;
+    text-indent: 15px;
+    text-align: justify;
+    font-style: italic;
+    color:#333; 
+}
+
+section.aboutus p::first-letter{
+    font-size: 200%;
+}
+
+
+
+
+
+/*Start Services*/
+section.services{
+    max-width: 1200px;
+    margin: auto;
+}
+section.services div{
+    width: 27.333%;
+    max-width: 350px;
+    min-height: 300px;
+    margin: 2%;
+    float: left;
+    background: #eee;
+    padding: 1%;
+    border-radius: 15px;
+    
+}
+
+
+section.services div h2{
+    text-align: center;
+    margin-bottom: 3px;
+    color: #fff;
+    border-radius: 10px;
+    
+}
+
+section.serices div p{
+    text-align: center;
+    font-size: 110%;
+    border-radius: 10px;
+    color: #fff;
+    font-style: italic;
+}
+
+section-services div ul{
+    width: 90%;
+    margin 3% auto;
+    color: #555;
+}
+
+section.services div ul li:before{
+    content: url(images/check.png);
+    margin-right: 5px;
+}
+
+section.services div h3{
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+    color: #fff;
+}
+
+section.services div.starter h2,
+section.services div.starter h3,
+section.services div.starter p{
+    border-radius: 5px;
+    background: #555;
+}
+section.services div.enhanced h2,
+section.services div.enhanced h3,
+section.services div.enhanced p{
+    border-radius: 5px;
+    background: #333;
+}
+section.services div.standard h2,
+section.services div.standard h3,
+section.services div.standard p{
+    border-radius: 5px;
+    background: #555;
+}
+
+
+/* Responsive */
+
+@media only screen and (max-width: 768px){
+    body{
+        font-size: 18px;
+    }
+    header div.logo{
+        width: 100%;
+        float: none;
+    }
+    header nav{
+        width: 100%;
+        float: none;
+    }
+    
+    header nav ul li:first-child{
+        margin-left: 0;
+    }
+    
+    /*End Navigation*/
+    
+    section.second-section form input{
+        padding: 2px 4px;
+    }
+    /*End Second Section*/
+
+    section.third-section img{
+        width: 100%;
+        float: none;
+        display: block;
+    }
+    /*End third section*/
+    footer p{
+        font-size: 120%;
+    }
+    
+    section.aboutus div{
+        width:100%;
+        float: none;
+    }
+    section.aboutus div img{
+        width: 90%;
+        margin: 8% auto 2% auto;
+    }
+    
+    section.aboutus div p{
+        width: 90%;
+    }
+    
+    /*About Us*/
+    
+    section.services div{
+        width: 90%;
+        margin: 4% auto 2% auto;
+        float: none;
+    
+    }
+    
+    /*End third section*/
+}
+
+
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    header nav ul li:first-child {
+        margin-left: 0;
+    }
+    section.aboutus {
+        padding: 5% 0;
+    }
+    section.aboutus div img {
+        width: 90%;
+    }
+    section.aboutus div p {
+        width: 90%;
+    }
+    section.services div {
+        width: 31.333%;
+        margin: 1%;
+        padding: 0;
+    }
+    section.services div ul {
+        width: 100%;
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

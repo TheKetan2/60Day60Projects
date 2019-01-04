@@ -1,0 +1,504 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 20px;
+    font-family: "Josefin Slab", serif;
+}
+.main-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+section:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+/* End common style */
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(img/header-bg.jpg) no-repeat center;
+    background-size: cover;
+    float: right;
+    transition: width .5s;
+}
+header div.center-text  {
+    width: 80%;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    text-align: center;
+    text-transform: uppercase;
+}
+header div.center-text h1 {
+    font-size: 300%;
+    margin-bottom: 2%;
+    color: #fff;
+}
+header div.center-text p {
+    font-size: 150%;
+    color: #eee;
+    margin-bottom: 3%;
+}
+header div.center-text a {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 1% 2%;
+    border-radius: 20px;
+    margin-right: 1%;
+    transition: background .2s;
+}
+header div.center-text a:hover {
+    background: #555;
+}
+header label i.fa-ellipsis-v {
+    font-size: 150%;
+    padding: 10px;
+    color: #fff;
+}
+header label i.fa-ellipsis-v:hover {
+    background: #ccc;
+}
+header nav.header-nav {
+    position: absolute;
+    top: 0%;
+    left: -20%;
+    opacity: 1;
+    width: 20%;
+    height: 100vh;
+    background: #e6e9f0;
+    transition: left .5s;
+}
+header nav.header-nav ul {
+    margin-top: 10%;
+}
+header nav.header-nav ul li {
+    margin-bottom: 5%;
+    border-bottom: 1px solid #c2dde6;
+    padding-left: 5%;
+}
+header nav.header-nav ul li a {
+    display: inline-block;
+    padding: 5% 0 0 3%;
+    border-top: 2px solid transparent;
+    color: #777;
+    font-weight: bold;
+    width: 80%;
+    transition: color .2s, border-top .2s;
+}
+header nav.header-nav ul li a:hover {
+    color: #333;
+    border-top: 2px solid #333;
+}
+input#nav-control:checked ~ div.header-clear header {
+    width: 80%;
+}
+input#nav-control:checked ~ div.header-clear header nav.header-nav {
+    left: 0;
+}
+div.header-clear:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+/* End Header */
+
+section.one-of-two-sections {
+    height: auto;
+    width: 90%;
+    margin: auto;
+}
+section.one-of-two-sections h2 {
+    text-align: center;
+    margin: 4% 0 2% 0;
+    color: #555;
+}
+section.one-of-two-sections figure {
+    margin: 1%;
+    position: relative;
+    width: 31.333%;
+    float: left;
+    overflow: hidden;
+}
+section.one-of-two-sections figure figcaption {
+    position: absolute;
+    top: 0;
+    font-weight: bolder;
+    color: #fff;
+    background: linear-gradient(to right, #333, #aaa);
+}
+section.one-of-two-sections figure img {
+    width: 100%;
+    margin: 0;
+    opacity: .8;
+    transform: scale(1.09, 1.09);
+    transition: transform .5s, opacity .5s;
+}
+section.one-of-two-sections figure img:hover {
+    transform: scale(1.3, 1.3);
+    opacity: 1;
+}
+section.second figure figcaption {
+    position: static;
+    text-align: center;
+    background: none;
+    color: #555;
+}
+section.second figure img {
+    width: 100%;
+    margin: 0;
+    opacity: .8;
+    transform: scale(.7, .7);
+}
+section.second figure img:hover {
+    transform: scale(1, 1);
+}
+/* End Images Section */
+section.our-team {
+    width: 90%;
+    margin: 3% auto;
+    overflow: hidden;
+}
+section.our-team h1 {
+    text-align: center;
+    margin-bottom: 2%;
+    color: #555;
+}
+section.our-team div.column {
+    width: 31.333%;
+    float: left;
+    margin: 0 1%;
+}
+section.our-team div.column img {
+    opacity: 1;
+    width: 100%;
+    display: block;
+    margin: auto;
+    transition: opacity .4s;
+}
+section.our-team div.column img:hover {
+    opacity: .9;
+}
+section.our-team div.column details summary {
+    font-weight: bolder;
+    font-size: 120%;
+    padding: 2% 0;
+    color: #555;
+}
+section.our-team div.column details p {
+    text-align: justify;
+    text-indent: 3%;
+}
+/* End Team section */
+
+section.video {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url(video/video-bg.jpg) no-repeat center;
+    background-size: cover;
+    padding: 5% 0;
+    margin-bottom: 3%;
+}
+section.video .video-wrapper {
+    width: 50%;
+    float: right;
+}
+section.video .video-wrapper video {
+    width: 60%;
+    margin-left: 20%;
+}
+section.video .text-wrapper {
+    width: 45%;
+    float: right;
+    color: #fff;
+    text-align: center;
+}
+section.video .text-wrapper p {
+    text-align: justify;
+    text-indent: 3%;
+}
+/* End Video Section */
+section.google-map {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(img/google-map-bg.jpg) no-repeat center;
+    background-size: cover;
+    padding: 2% 0;
+}
+section.google-map h2 {
+    color: #fff;
+    text-align: center;
+    padding: 1%;
+    margin: auto;
+}
+section.google-map div {
+    width: 50%;
+    float: left;
+}
+section.google-map div.map iframe {
+    min-height: 340px;
+    width: 90%;
+    margin: 2% 5%;
+}
+section.google-map div form {
+    width: 90%;
+    margin: auto;
+}
+section.google-map div form input, section.google-map div form textarea {
+    display: block;
+    width: 90%;
+    margin: 1% 5%;
+    padding: 1% 0;
+    font-size: 90%;
+    background: #fff;
+}
+section.google-map div form input[type="submit"] {
+    width: 25%;
+    background: #555;
+    color: #fff;
+    transition: background .2s, color .2s;
+}
+section.google-map div form input[type="submit"]:hover {
+    background: #fff;
+    color: #555;
+}
+/* End Google Map Section */
+section.gallery {
+    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url(img/gallery-imgs/gallery-bg.jpg) no-repeat center fixed;
+    background-size: cover;
+    margin: 4% 0 0 0;
+    width: 100%;
+    height: auto;
+    padding: 12% 0;
+}
+section.gallery img {
+    display: block;
+    width: 10%;
+    height: auto;
+    float: left;
+    transform: scale(1.3, 1.3) rotate(35deg);
+    opacity: .3;
+    transition: transform .4s, opacity .4s;
+}
+section.gallery img:hover {
+    transform: scale(2.6, 2.6) rotate(0deg);
+    opacity: 1;
+    position: relative;
+    z-index: 100;
+}
+section.gallery img:hover:first-child {
+    transform: scale(2.6, 2.6) rotate(0deg) translate(35%);
+}
+section.gallery img:hover:last-child {
+    transform: scale(2.6, 2.6) rotate(0deg) translate(-35%);
+}
+/* End gallery Section */
+
+footer {
+    width: 100%;
+    padding: 5% 0 1% 0;
+    background: url(img/footer-bg.png) no-repeat top;
+    background-color: #4169e1;
+    background-size: cover;
+    overflow: auto;
+}
+footer div {
+    width: 33.3333%;
+    float: left;
+}
+footer div h3, footer div p {
+    color: #ddd;
+    text-align: center;
+    margin-bottom: 10px;
+}
+footer div.stay-tuned a {
+    width: 50%;
+    margin: 2px auto;
+    display: block;
+    text-align: center;
+}
+footer div.stay-tuned a i.fa {
+    width: 100%;
+    padding: 5px 0;
+    border: 1px solid #eee;
+    color: #ddd;
+    font-size: 120%;
+}
+footer div.stay-tuned a i.fa:hover {
+    color: #fff;
+}
+footer div.stay-tuned a i.fa-facebook:hover {
+    background: #3b5998;
+}
+footer div.stay-tuned a i.fa-google-plus:hover {
+    background: #dd4b39;
+}
+footer div.stay-tuned a i.fa-twitter:hover {
+    background: #55acee;
+}
+footer div.stay-tuned a i.fa-instagram:hover {
+    background: #125688;
+}
+footer div.email form input {
+    display: block;
+    margin: 13% auto 0 auto;
+    font-size: 90%;
+    border: 2px solid #ccc;
+    width: 60%;
+    padding: 1%;
+    background: transparent;
+    color: #ddd;
+}
+footer div.email form input:focus {
+    border: 2px solid #fff;
+}
+footer div.languages a {
+    display: block;
+    width: 30%;
+    margin: 4% auto;
+    color: #ddd;
+}
+footer div.languages a:hover {
+    color: #fff;
+}
+footer div.languages a#en:before {
+    content: url(img/language-icons/USA-icon.png);
+}
+footer div.languages a#sp:before {
+    content: url(img/language-icons/Spain-icon.png);
+}
+footer div.languages a#fr:before {
+    content: url(img/language-icons/France-icon.png);
+}
+footer div.languages a#it:before {
+    content: url(img/language-icons/Italy-icon.png);
+}
+footer h2 {
+    width: 80%;
+    margin: auto;
+    padding: 3% 0 2% 0;
+    overflow: hidden;
+    font-size: 100%;
+    font-style: italic;
+    text-align: center;
+    color: #777;
+}
+/* Responsive */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

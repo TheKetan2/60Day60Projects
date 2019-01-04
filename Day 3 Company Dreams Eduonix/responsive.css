@@ -1,0 +1,176 @@
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+    header div.center-text h1 {
+        font-size: 200%;
+        margin-bottom: 10%;
+    }
+    header div.center-text p {
+        font-size: 110%;
+        margin-bottom: 10%;
+    }
+    header div.center-text a {
+        width: 100%;
+        padding: 2% 3%;
+        font-size: 110%;
+        text-transform: capitalize;
+    }
+    header nav.header-nav {
+        width: 50%;
+        left: -50%;
+    }
+    input#nav-control:checked ~ div.header-clear header {
+        width: 50%;
+    }
+    header nav.header-nav ul a {
+        font-size: 110%;
+        padding: 5% 0 0 8%;
+    }
+    /* End Navigation */
+    
+    section.one-of-two-sections {
+        width: 100%;
+    }
+    section.one-of-two-sections figure {
+        float: none;
+        width: 95%;
+        margin: 0 auto 5% auto;
+    }
+    section.second figure img {
+        transform: scale(.8, .8);
+    }
+    /* End Images Section */
+    
+    section.our-team {
+        width: 100%;
+    }
+    section.our-team div.column {
+        float: none;
+        width: 100%;
+        margin-bottom: 3%;
+    }
+    section.our-team div.column details summary {
+        font-size: 100%;
+    }
+    /* End Team sectioin */
+    
+    section.video {
+        padding: 0;
+    }
+    section.video div.video-wrapper {
+        float: none;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 5%;
+    }
+    section.video div.video-wrapper video {
+        width: 100%;
+        margin: 0;
+    }
+    section.video div.text-wrapper {
+        float: none;
+        width: 100%;
+    }
+    section.video div.text-wrapper p {
+        padding: 0 3% 4% 3%;
+    }
+    /* End Video Section */
+    
+    section.google-map div {
+        width: 100%;
+        float: none;
+    }
+    section.google-map div form {
+        width: 100%;
+    }
+    /* End Google Map Section */
+    
+    section.gallery img {
+        float: none;
+        width: 50%;
+        margin: 5% auto;
+        opacity: .6;
+        transform: scale(1.3, 1.3) rotate(20deg);
+    }
+    section.gallery img:hover {
+        transform: scale(1.9, 1.9) rotate(0deg);
+    }
+    section.gallery img:hover:first-child, section.gallery img:hover:last-child {
+        transform: scale(1.9, 1.9) rotate(0deg);
+    }
+    /* End image Gallery */
+    
+    footer div {
+        width: 100%;
+        float: none;
+        margin-bottom: 10%;
+    }
+    footer div.email form input {
+        margin: 4% auto;
+    }
+    footer div.languages {
+        text-align: center;
+    }
+    footer div.languages a {
+        width: 40%;
+        margin-left: 30%;
+    }
+    /* End Footer */
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    header nav.header-nav {
+        width: 30%;
+        left: -30%;
+    }
+    input#nav-control:checked ~ div.header-clear header {
+        width: 70%;
+    }
+    /* End Navigation */
+    
+    section.one-of-two-sections {
+        width: 100%;
+    }
+    /* End images Section */
+    
+    section.our-team {
+        width: 100%;
+    }
+    /* End Team section */
+    
+    section.video div.text-wrapper {
+        margin: 5% auto;
+    }
+    section.video div.video-wrapper video {
+        width: 90%;
+        margin: 10% 5%;
+    }
+    /* End Video Section */
+    
+    section.gallery {
+        padding: 20% 0;
+    }
+    section.gallery img:nth-child(even) {
+        margin-top: 3%;
+    }
+    section.gallery img:nth-child(even):hover {
+        transform: scale(3.8, 3.8) rotate(0deg) translate(14%, 35%);
+    }
+    section.gallery img:nth-child(odd):hover {
+        transform: scale(3.8, 3.8) rotate(0deg) translate(-14%, -35%);
+    }
+    section.gallery img:hover:first-child {
+        transform: scale(3.8, 3.8) rotate(0deg) translate(40%, -35%);
+    }
+    section.gallery img:hover:last-child {
+        transform: scale(3.8, 3.8) rotate(0deg) translate(-40%, 35%);
+    }
+    footer div {
+        width: 31.333%;
+        margin: 0 1%;
+    }
+    footer div.languages a {
+        width: 50%;
+    }
+}

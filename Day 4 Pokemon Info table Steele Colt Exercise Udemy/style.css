@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+.wrapper{
+    width: 80%;
+    text-align: center;
+    margin: 2% 5%;
+    float: inherit;
+}
+

@@ -1,6 +1,6 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px auto;
+    padding: 0px;
 }
 body{
     width: 100%;
@@ -9,7 +9,10 @@ body{
 .wrapper{
     width: 80%;
     text-align: center;
-    margin: 2% 5%;
-    float: inherit;
+    margin: 0px auto;
 }
 
+img{
+    width: 10em;
+    height: 10em;
+}

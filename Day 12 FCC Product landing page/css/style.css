@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #e9f6fd; /* Old browsers */
+background: -moz-linear-gradient(top, #e9f6fd 0%, #d3eefb 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #e9f6fd 0%,#d3eefb 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #e9f6fd 0%,#d3eefb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header{
+    background: #d6f9ff; /* Old browsers */
+background: -moz-linear-gradient(top, #d6f9ff 0%, #9ee8fa 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #d6f9ff 0%,#9ee8fa 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #d6f9ff 0%,#9ee8fa 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+height: 400px;
+}
+nav{
+    width: 100%;
+    background: rgb(248, 248, 248);
+    overflow: auto;
+}
+ul{
+    padding: 0;
+    margin: 0 0 0 150px;
+    list-style: none;
+}
+li{
+    float: right;
+}
+.logo img{
+    width: 20em;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+nav a{
+    color: blue;
+    display: inline-block;
+    padding: 25px 15px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: rgb(242, 242, 248);
+    background: rgb(25, 39, 3);
+}
+.email-input{
+    margin-top: 150px;
+    text-align: center;
+    
+}
+input{
+    padding: 10px;
+    border: 0px solid black;
+    border-radius: 10px;
+}
+
